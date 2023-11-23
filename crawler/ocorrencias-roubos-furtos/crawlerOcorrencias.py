@@ -14,7 +14,7 @@ with requests.Session() as s:
                 my_list = list(cr)
                 # print(my_list)
 
-arquivo = "C:/Users/bruno/Documents/projetosPy/crawlerOcorrencias/ocorrencias.csv"
+arquivo = "C:/Users/bruno/Documents/projetosPy/crawler/ocorrencias-roubos-furtos/ocorrencias.csv"
 with open(arquivo, mode='w', newline='') as arquivo_csv:
         escritor_csv = csv.writer(arquivo_csv)
         escritor_csv.writerow(["ANO", "MES","UF","ARMA","MARCA","CALIBRE","TIPO", "TOTAL"])

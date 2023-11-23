@@ -1,4 +1,4 @@
-ocorrencias <- read.csv("C:/Users/bruno/Documents/projetosPy/crawlerOcorrencias/ocorrencias.csv", comment.char="#")
+ocorrencias <- read.csv("C:/Users/bruno/Documents/projetosPy/crawler/ocorrencias-roubos-furtos/ocorrencias.csv", comment.char="#")
 
 
 barplot(table(ocorrencias$UF),ylab="Freq. Ocorrencias",xlab="Estado",col=2:8)
@@ -14,5 +14,6 @@ legend("topright",
        bty = "n")
 
 subsetArma <- subset(ocorrencias, ARMA == "Pistola")
+
 barplot(table(subsetArma$UF), ,ylab="Freq. Ocorrencias Pistola",xlab="Estado",col=2:6)
           
