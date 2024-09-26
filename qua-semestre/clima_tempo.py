@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def lambda_handler(event, context):
     try:
         url = "http://apiadvisor.climatempo.com.br/api/v1/anl/synoptic/locale/BR?token=" + event["token"]
